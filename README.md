@@ -1,9 +1,9 @@
 # STM32-BareMetal-RNA-Sequencer-
 # Bare-Metal STM32 ARM Assembly Sequencer
 
-An academic embedded systems exercise implementing a streaming string-search algorithm on an STM32F407VGT6 microcontroller. This project was written entirely in ARM Cortex-M4 assembly without the use of Hardware Abstraction Libraries (HAL).
+An academic embedded systems exercise implementing a streaming string-search algorithm on an STM32F407VGT6 microcontroller. This project was written in ARM Cortex-M4 assembly without the use of Hardware Abstraction Libraries (HAL) or Real Time Operating System (RTOS).
 ## Overview
-The application receives strings of RNA nucleotides via a serial terminal, translates them into their DNA complements, and performs an exact string match against the SARS-CoV-2 genome stored in read-only memory. It features direct register manipulation for peripheral configuration and custom string-processing routines.
+The application receives strings of RNA nucleotides via a serial terminal, translates them into their DNA complements, and performs the string matching against the SARS-CoV-2 genome stored in ROM. 
 
 ## Key Implementation Details
 *   **Direct Peripheral Control:** Configures clock trees (RCC), GPIO pins, and USART2 communication by directly bit-masking memory-mapped registers.
